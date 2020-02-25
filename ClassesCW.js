@@ -61,24 +61,30 @@ console.log(sampleFilm.yearReleased);
 //***Start of Code***
 // Create a Student class//
 class Student {
-    constructor() {
+    constructor(studentName, codeSchoolCohort, grades) {
         //A Class with the following properties : studentName, codeSchoolCohort, and grades(grades should be an array of objects and each object should have the properties assignemtName and assignemtnScore)
-        this.
-            this.
-            this.
+        this.studentName = studentName;
+        this.codeSchoolCohort = codeSchoolCohort;
+        this.grades = grades;
     }
     //Create a method that accepts a student name and updates the studentName of an instance of your Student Class
-    someMethod() {
-
+    nameChange(newName) {
+        this.studentName = prompt(`The current listed student name is "${this.studentName}",enter a new name to update the listing.`);
     }
     //Create a method that accepts an assignment name and assignment score and adds a grade object to the grades array//
-    anotherMethod() {
-
-    }
+    // updateGradebook(assgmtName,assgmtGrade) {
+    //     let gradeBook=[];
+    //     userAssgmt=prompt(`Enter the name of the next assignment.`);
+    //     this.grades
+    // }
 }
+let firstEntry = new Student("Jeff R. Thomas","4","100");
+console.log(firstEntry);
+firstEntry.nameChange("Jeff Rashad Thomas");
+console.log(firstEntry);
 //Create two instances of this class with empty grade arrays
-
 //Update the name of one instance of the Student Class using the class method. Add one grade object to each instance of the Student Class grade array using the class method.
 // HINT : use object literal notation to create a grade object in the grade array for each instance of the Student Class
+// ***End of Code***
 
 
